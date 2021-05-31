@@ -8,8 +8,9 @@ Prerequisite
 1. Docker software on your local machine.  If you are using Windows or mac, the easiest is to install Docker Desktop (https://www.docker.com/products/docker-desktop)
 2. You need to install git on your local machine.  (https://github.com/git-guides/install-git)
 
-To setup laravel 8 environment for a project "Project A"
-1. git clone http://github.com/barrychum/laravel8docker.git "Project A"
-2. docker-compose up -d
-3. docker-compose exec app composer create-project laravel/laravel=8.4 /var/www/html
-4. docker-compose exec app php artisan key:generate
+To setup laravel 8 environment for a project e.g. "laravel8"
+1. git clone http://github.com/barrychum/laravel8docker.git "laravel8"
+2. cd laravel8
+3. docker-compose up -d
+4. docker-compose exec app composer create-project laravel/laravel=8.4 /var/www/html
+5. docker-compose exec app php artisan key:generate
